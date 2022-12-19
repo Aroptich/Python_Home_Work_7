@@ -10,6 +10,7 @@ def records_data_csv(first_name, last_name, phone_number):
         writer.writerow({'Имя': first_name,
                          'Фамилия': last_name,
                          'Номер телефона': phone_number})
+        print('Данные успешно сохранены в "Directory.csv"')
 
 def record_data_json(first_name, last_name, phone_number):
     data = {'Имя': first_name,
@@ -18,6 +19,7 @@ def record_data_json(first_name, last_name, phone_number):
 
     with open('Directory_json.txt', 'a') as outfile:
         json.dump(data, outfile)
+        print('Данные успешно сохранены в "Directory_json.txt"')
 
 
 def record_data_txt(first_name, last_name, phone_number):
